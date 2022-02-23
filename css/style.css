@@ -13,7 +13,7 @@ body{
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .wrapper{
@@ -23,30 +23,40 @@ body{
     /* background-color: rgba(178, 34, 34, 0.16); */
 }
 
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .text-area{
     width: 350px;
-    height: 450px;
-    background-color: dodgerblue;
     position: absolute;
-    right: 150px;
-    top: 70px;
+    right: 130px;
+    top: 80px;
 }
 
 .image-area{
     display: inline-block;
     width: 550px;
     height: 450px;
-    background-color: aquamarine;
     position: absolute;
-    left: 150px;
-    top: 70px;
+    left: 66px;
+    top: 80px;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+.text-up{
+    font-size: 38px;
+    width: 290px;
 }
+
+.text-down{
+    font-size: 18px;
+    width: 326px;
+    font-weight: 600;
+}
+
+
 
 /******** HEADER ********/
 
@@ -54,7 +64,6 @@ header{
     background-image: url("../img/jumbo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
 }
 
 /* navbar */
@@ -139,46 +148,74 @@ header{
     margin-left: 2rem;
 }
 
-/* MAIN */
+/********* MAIN **********/
+
+site-main{
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+}
+
 
 .image-area-reverse{
     width: 550px;
     height: 450px;
-    background-color: rgb(54, 109, 22);
     position: absolute;
-    right: 150px;
-    top: 70px;
-
+      right: 252px;
+    top: 90px;
 }
+
 
 .text-area-reverse{
     width: 350px;
     height: 450px;
-    background-color: rgb(11, 66, 48);
     position: absolute;
     left: 150px;
     top: 70px;
 }
 
+
 .text-area-top{
-    margin: 0 auto ;
-    width: 700px;
+    margin: 0 auto;
+    width: 1058px;
     height: 100px;
-    background-color: azure;
+}
+
+.text-top{
+    text-align: center;
+    font-size: 38px;
+}
+
+.text-sub-top{
+    text-align: center;
+    font-size: 18px;
+    width: 840px;
+    margin-left: 105px;
+    font-weight: 600;
 }
 
 .image-area-mid{
     margin: 30px auto;
     width: 900px;
     height: 60vh;
-    background-color: chocolate;
 }
 
 .text-bot{
-    margin: 0 auto;
+    margin: 20px auto;
     width: 400px;
     height: 50px;
-    background-color: darkmagenta;
+}
+
+.stars>button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 12px;
+    color: white;
+    background-color: #7594e3;
+    position: absolute;
+    bottom: 130px;
+    left: 548px;
+
 }
 
 
@@ -187,6 +224,10 @@ header{
 .row{
     background-color: black;
 
+}
+
+footer{
+    margin-top: 100px;
 }
 
 .foot{
