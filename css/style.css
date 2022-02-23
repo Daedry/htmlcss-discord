@@ -14,7 +14,6 @@ body{
 .container{
     height: 100vh;
     background-color: cadetblue;
-    border: 5px dashed black;
 }
 
 .wrapper{
@@ -41,6 +40,12 @@ body{
     position: absolute;
     left: 150px;
     top: 70px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /******** HEADER ********/
@@ -146,3 +151,36 @@ header{
 
 
 /* FOOTER */
+
+.row{
+    background-color: black;
+
+}
+
+.foot{
+    margin-top: 70px;
+}
+
+.grid-left{
+    margin-left: 70px;
+    float: left;
+    width: 200px;
+    height: 400px;
+    background-color: darkgoldenrod;
+}
+
+.grid-right{
+    float: left;
+    width: 75%;
+    height: 400px;
+    background-color: coral;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 100px;
+    left: 180px;
+    width: 980px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
