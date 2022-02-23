@@ -6,21 +6,21 @@
 }
 
 body{
-    background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* UTILITY */
 
 .container{
+    width: 100%;
     height: 100vh;
-    background-color: cadetblue;
 }
 
 .wrapper{
     position: relative;
-    margin: 60px 15%;
-    background-color: rgba(178, 34, 34, 0.685);
-    height: 90vh;
+    margin: 0px 15%;
+    height: 100vh;
+    /* background-color: rgba(178, 34, 34, 0.16); */
 }
 
 .text-area{
@@ -51,61 +51,93 @@ body{
 /******** HEADER ********/
 
 header{
-    width: 100vw;
-    height: 100vh;
+    background-image: url("../img/jumbo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* navbar */
+
 .navbar{
-    background-color: rgb(184, 135, 11);
-    height: 80px;
     position: relative;
+    font-size: 16px;
 }
 
 .logo{
-    display: inline-block;
-    margin: 10px;
-    width: 150px;
-    height: 50px;
-    background-color: darkgreen;
- 
+    position: absolute;
+    top: 13px;
 }
 
 .links{
     margin: 10px auto;
-    width: 670px;
-    height: 50px;
-    background-color: rgb(5, 32, 5);
     position: absolute;
-    left: 25%;
+    left: 33%;
+    top: 12px;
+}
+
+.link{
+    text-decoration: none;
+    margin: 0 15px;
+  
+    color: white;
 }
 
 .log{
     position: absolute;
     right: 10px;
-    top: 10px;
-    width: 100px;
-    height: 50px;
-    background-color: chartreuse;
+    top: 13px;
 }
 
+.log>button{
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+}
 
 /* text */
 
 .title-text{
-    margin: 90px auto 20px;
-    height: 300px;
-    width: 700px;
-    background-color: rgba(0, 0, 139, 0.712);
+    color: white;
+}
+
+.title{
+    position: absolute;
+    top: 72px;
+    left: 27%;
+    font-size: 58px;
+}
+
+.sub-title{
+    position: absolute;
+    font-size: 22px;
+    bottom: 562px;
+    left: 250px;
+    text-align: center;
+    width: 830px;
 }
 
 .btn{
-    margin: 0 auto;
-    background-color: blueviolet;
-    height: 50px;
-    width: 400px;
+    position: absolute;
+    bottom: 505px;
+    left: 400px;
+    font-size: px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.btn-white, .btn-black{
+  padding: 15px 30px;
+  
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.btn-black{
+    color: white;
+    background-color: rgb(36, 34, 34);
+    margin-left: 2rem;
+}
 
 /* MAIN */
 
