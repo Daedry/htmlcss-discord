@@ -1,259 +1,371 @@
 /* COMMON */
-:root{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* UTILITY */
 
-.container{
-    width: 100%;
-    height: 80vh;
+.container {
+  width: 100%;
+  height: 84vh;
 }
 
-.wrapper{
-    position: relative;
-    margin: 0px 15%;
-    height: 100vh;
-    /* background-color: rgba(178, 34, 34, 0.16); */
+.container-box-m {
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 670px;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+.container-box-lg {
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 843px;
 }
 
-.text-area{
-    width: 350px;
-    position: absolute;
-    right: 130px;
-    top: 80px;
+.wrapper {
+  position: relative;
+  margin: 0px 15%;
+  height: 100vh;
 }
 
-.image-area{
-    display: inline-block;
-    width: 550px;
-    height: 450px;
-    position: absolute;
-    left: 66px;
-    top: 80px;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.text-up{
-    font-size: 38px;
-    width: 290px;
+.text-area {
+  width: 350px;
+  position: absolute;
+  right: -47px;
+  top: 77px;
 }
 
-.text-down{
-    font-size: 18px;
-    width: 326px;
-    font-weight: 600;
+.image-area {
+  display: inline-block;
+  width: 550px;
+  height: 450px;
+  position: absolute;
+  left: -37px;
+  top: 80px;
 }
 
+.text-up {
+  font-size: 38px;
+  width: 290px;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
 
+.text-down {
+  font-size: 18px;
+  width: 326px;
+  font-weight: 600;
+}
+
+.mt-10x {
+  margin-top: 10%;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 /******** HEADER ********/
 
-header{
-    background-image: url("../img/jumbo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+header {
+  background-image: url("../img/jumbo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* navbar */
 
-.navbar{
-    position: relative;
-    font-size: 16px;
+.navbar {
+  position: relative;
+  font-size: 16px;
 }
 
-.logo{
-    position: absolute;
-    top: 13px;
+.logo {
+  position: absolute;
+  top: 13px;
 }
 
-.links{
-    margin: 10px auto;
-    position: absolute;
-    left: 33%;
-    top: 12px;
+.links {
+  margin: 10px auto;
+  position: absolute;
+  left: 33%;
+  top: 12px;
 }
 
-.link{
-    text-decoration: none;
-    margin: 0 15px;
-  
-    color: white;
+.link {
+  text-decoration: none;
+  margin: 0 15px;
+
+  color: white;
 }
 
-.log{
-    position: absolute;
-    right: 10px;
-    top: 13px;
+.log {
+  position: absolute;
+  right: 10px;
+  top: 13px;
 }
 
-.log>button{
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
+.log > button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
 }
 
 /* text */
 
-.title-text{
-    color: white;
+.title-text {
+  color: white;
 }
 
-.title{
-    position: absolute;
-    top: 72px;
-    left: 27%;
-    font-size: 58px;
+.title {
+  position: absolute;
+  top: 45px;
+  left: 25%;
+  font-size: 50px;
 }
 
-.sub-title{
-    position: absolute;
-    font-size: 22px;
-    bottom: 562px;
-    left: 250px;
-    text-align: center;
-    width: 830px;
+.sub-title {
+  position: absolute;
+  font-size: 20px;
+  bottom: 415px;
+  left: 172px;
+  text-align: center;
+  width: 763px;
 }
 
-.btn{
-    position: absolute;
-    bottom: 505px;
-    left: 400px;
-    font-size: px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.btn {
+  position: absolute;
+  bottom: 343px;
+  left: 263px;
+  font-size: px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.btn-white, .btn-black{
+.btn-white,
+.btn-black {
   padding: 15px 30px;
-  
+
   border: none;
   border-radius: 30px;
   font-size: 18px;
 }
 
-.btn-black{
-    color: white;
-    background-color: rgb(36, 34, 34);
-    margin-left: 2rem;
+.btn-black {
+  color: white;
+  background-color: rgb(36, 34, 34);
+  margin-left: 2rem;
 }
 
 /********* MAIN **********/
 
-site-main{
-    background-image: url("../img/wave.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 150px;
+.wave{
+    color: #f6f6f6;
 }
 
-
-.image-area-reverse{
-    width: 550px;
-    height: 450px;
-    position: absolute;
-      right: 252px;
-    top: 90px;
+.wave.top {
+  margin-bottom: -10px;
 }
 
-
-.text-area-reverse{
-    width: 350px;
-    height: 450px;
-    position: absolute;
-    left: 150px;
-    top: 70px;
+.wave.bot{
+    transform: rotate(180deg);
 }
 
-
-.text-area-top{
-    margin: 0 auto;
-    width: 1058px;
-    height: 100px;
+.image-area-reverse {
+  width: 550px;
+  height: 450px;
+  position: absolute;
+  right: 111px;
+  top: 114px;
 }
 
-.text-top{
-    text-align: center;
-    font-size: 38px;
+.text-area-reverse {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  left: 0px;
+  top: 110px;
 }
 
-.text-sub-top{
-    text-align: center;
-    font-size: 18px;
-    width: 840px;
-    margin-left: 105px;
-    font-weight: 600;
+.text-area-top {
+  margin: 0 auto;
+  width: 1058px;
+  height: 100px;
 }
 
-.image-area-mid{
-    margin: 30px auto;
-    width: 900px;
-    height: 60vh;
+.text-top {
+  text-align: center;
+  font-size: 38px;
+  padding-top: 70px;
 }
 
-.text-bot{
-    margin: 20px auto;
-    width: 400px;
-    height: 50px;
+.text-sub-top {
+  text-align: center;
+  font-size: 16px;
+  width: 840px;
+  margin: 1.5rem auto 5rem;
+  font-weight: 600;
 }
 
-.stars>button{
-    border: none;
-    border-radius: 20px;
-    padding: 10px 12px;
-    color: white;
-    background-color: #7594e3;
-    position: absolute;
-    bottom: 130px;
-    left: 548px;
-
+.image-area-mid {
+  margin: 70px auto;
+  width: 900px;
+  height: 60vh;
 }
 
+.text-bot {
+  margin: 100px auto;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.stars {
+  padding: 0.7rem;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stars .btn-purple {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  color: white;
+  background-color: #8ea1e1;
+  position: absolute;
+  left: 133px;
+  top: 55px;
+}
+
+.btn-purple i {
+  font-size: 10px;
+}
 
 /* FOOTER */
 
-.row{
-    background-color: black;
-
+footer {
+  /* margin-top: 200px; */
+  background-color: #23272a;
+  color: white;
 }
 
-footer{
-    margin-top: 100px;
+#site-footer .wrapper {
+  height: 50vh;
+}
+.foot {
+  margin-top: 5rem;
 }
 
-.foot{
-    margin-top: 70px;
+/* grid-left */
+
+.grid-left {
+  float: left;
+  width: 30%;
+  height: 400px;
 }
 
-.grid-left{
-    margin-left: 70px;
-    float: left;
-    width: 200px;
-    height: 400px;
-    background-color: darkgoldenrod;
+.grid-left > h2,
+.col-25 > h5 {
+  color: #7289da;
 }
 
-.grid-right{
-    float: left;
-    width: 75%;
-    height: 400px;
-    background-color: coral;
+.grid-left > h2 {
+  font-size: 30px;
 }
 
-.bottom{
-    position: absolute;
-    bottom: 100px;
-    left: 180px;
-    width: 980px;
-    height: 100px;
-    background-color: blanchedalmond;
+.ita {
+  margin: 20px 0;
+  font-size: 11px;
+}
+
+.ita i {
+  font-size: 6px;
+}
+
+.ita > img {
+  width: 20px;
+}
+
+.icon i {
+  padding-right: 1rem;
+  font-size: 14px;
+}
+
+/* grid-right */
+
+.grid-right {
+  float: left;
+  width: 70%;
+  height: 400px;
+  margin-bottom: 1.25rem;
+}
+
+.col-25 {
+  float: left;
+}
+
+.col-25 > h5,
+.col-25 > ul > li {
+  padding-top: 0.7rem;
+}
+
+.col-25 a {
+  color: white;
+  font-size: 13px;
+}
+
+/* bottom */
+
+.bottom {
+  float: left;
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #47557c;
+}
+
+.logo-footer {
+  float: left;
+}
+
+.logo-footer > img {
+  width: 100px;
+  padding-top: 2.5rem;
+}
+
+.sign-in {
+  float: right;
+  padding-top: 2.5rem;
+}
+
+.sign-in > a {
+  background-color: #8ea1e1;
+  padding: 0.5rem 0.8rem;
+  color: white;
+  border-radius: 28px;
+  font-size: 10px;
 }
